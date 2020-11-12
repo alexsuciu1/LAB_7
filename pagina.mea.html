@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title > Descrierea mea </title>
+<body>
+   <head>
+       <style>
+	   
+	       body { 
+		   background-color: rgb(250,213,255);
+		   }
+	       
+		   h3 {
+		     text-align: center;
+			 color: rgb(210,115,210);
+			 font-size: 15px;
+			 font-family: "Sans-serif";
+		   }
+		   
+		   	       img {
+				   opacity: 0.7;
+                 display: block;
+                 margin-left: auto;
+                  margin-right: auto;
+				  margin-color: rgb(64,24,78);
+                  
+                       }
+		   .photo 
+		     {
+	
+			   border-style: double ;
+			   border-width: 15px;
+			   border-color: #3D3436;
+			   border-radius: 15px;
+		     }
+		   
+            .text 
+			  {
+			  text-align: center;
+			  color: blue;
+			  }
+		   
+		   table 
+		   {
+		    border: 5px solid rgb(122,103,122);
+			border-collapse: collapse;
+			border-color: blue;
+		   }
+		   
+		   .list {
+		   border-style: solid;
+		   border-width: 7px;
+		   border-color: #8E747F;
+		   border-radius: 5px;
+		   }
+		   
+		   p{
+		      background-color: #E6D8DF;
+			  font-family: "dancing script";
+			  font-size:20px;
+			  font-style: italic;
+		   }
+		   
+		   h4{
+		    font-family:"syne-mono";
+			font-size: 17px;
+			font-style: bold;
+			
+			
+			} 
+	   </style>
+	   
+	   <script>
+	      function veziViitor()
+		  {
+		     document.getElementById("NumeProfil").innerHTML="Front End Web Developer";
+			 document.getElementById("aprof").innerHTML="Experiente pe care vreau sa le traiesc in viitor:"
+			 document.body.style.backgroundColor="green";
+			
+			 
+			 var tabel =document.getElementById("tabelEducatie");
+			 tabelEducatie.rows[0].cells[0].innerHTML=" crucea rosie";
+			 tabelEducatie.rows[0].cells[1].innerHTML=" ";
+			 tabelEducatie.rows[0].cells[2].innerHTML=" ";
+			 tabelEducatie.rows[0].cells[3].innerHTML=" lume noua";
+			 tabelEducatie.rows[1].cells[0].innerHTML=" hiking "
+			 tabelEducatie.rows[1].cells[1].innerHTML=" "
+			 tabelEducatie.rows[1].cells[2].innerHTML=" "
+			 tabelEducatie.rows[1].cells[3].innerHTML=" experiente noi";
+			 tabelEducatie.rows[2].cells[0].innerHTML=" ";
+			 tabelEducatie.rows[2].cells[1].innerHTML=" ";
+			 tabelEducatie.rows[2].cells[2].innerHTML=" ";
+			 tabelEducatie.rows[2].cells[3].innerHTML=" ";
+			 
+			 document.getElementById("imagineNoua").src="1.jpg";
+			 document.getElementById("imagineNoua").style.opacity="0.7";
+			 document.getElementById("imagineNoua").style.border="1em solid";
+			 document.getElementById("imagineNoua").style.border.radius="10px";
+		     document.getElementById("citat").innerHTML="Nu am dat greş de 999 ori. Pur şi simplu am descoperit descoperit 999 de feluri în care nu se construieşte un bec.";
+			 
+		   var h3= document.getElementsByTagName("h3");
+		   var i;
+		   
+		  for(i = 0; i < h3.length; i++)
+		  {
+          h3[i].style.color= "white";
+          h3[i].style.fontFamily ="cursive";
+
+          }
+		  
+		  var td= document.getElementsByTagName("td");
+		  for(i=0; i< td.length; i++)
+		  {
+		  tr[i].style.color="white";
+		  tr[i].style.fontFamily="italic"
+		  }
+		  
+        
+		  }
+		 
+		 
+	   </script>
+	   
+   </head>
+  
+ <div> <h3 id="NumeProfil"> Suciu Alexandru </h3>
+    
+  <h3 align="center" color="orange"> E-mail: a.suciu65@yahoo.com </h3>
+  <p id = "varsta" align=center> 2001</p>
+  
+  <img id="imagineNoua" class="photo" src="Picture1.jpg.png" width="140" height="200" align="center">
+  
+  <button onclick="veziViitor()">Alta viata</button>
+  
+</div>
+<h3 id="aprof"> Discipline: </h3>
+<table id="tabelEducatie" class="text " align=center>
+  <tr>
+     <td> 1 </td>
+     <td> Componente si circuite pasive </td>
+     <td> Anul I </td>
+     <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf"> Link disciplina</a></td>
+  </tr>
+
+   <tr>
+     <td> 2 </td>
+     <td> Informatica Aplicata </td>
+     <td> Anul I </td>
+     <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf"> Link disciplina</a> </td>
+  </tr>
+  
+   <tr>
+     <td> 3 </td>
+     <td> Engleza </td>
+     <td> Anul I </td>
+     <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3114.10.pdf"> Link disciplina</a> </td>
+  </tr>
+</table>
+
+<div>
+
+<p id="citat"> “Ai n-ai miingea dai la poarta.”- Gheorghe Hagi </p>
+<h4> Hobby-uri </h4>
+  <ul class="list">
+    <li>Fitness</li>
+    <li>Fotbal </li>
+   
+</ul>
+
+</div>
+
+
+</body>
+ 
+</html>
